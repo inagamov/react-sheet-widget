@@ -92,16 +92,18 @@ body {
 
 /* Loader */
 .loader {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100px;
-	height: 100px;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+}
+
+.loader > div {
+	width: 20px;
+	height: 20px;
 	border: 2px solid rgba(116, 116, 135, 0.5);
+	border-top: 2px solid #37a859;
 	border-radius: 50%;
 	animation: spin 1s linear infinite;
-	border-top: 2px solid #000;
 }
 
 @keyframes spin {
@@ -234,8 +236,7 @@ body {
 .pagination {
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding: 40px 0;
 	gap: 10px;
 }
 
